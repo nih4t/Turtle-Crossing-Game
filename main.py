@@ -33,6 +33,8 @@ while game_is_on:
     if car_manager.player_car_collision(player.xcor(), player.ycor()):
         game_is_on = False
         scoreboard.level = 1
+        scoreboard.game_over()
 
 
 
+screen.exitonclick()
